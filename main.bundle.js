@@ -79,7 +79,8 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("./src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blog_component__ = __webpack_require__("./src/app/blog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_markdown__ = __webpack_require__("./node_modules/angular2-markdown/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pageNotFound_component__ = __webpack_require__("./src/app/pageNotFound.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular2_markdown__ = __webpack_require__("./node_modules/angular2-markdown/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -93,11 +94,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     {
         path: 'post/:id',
         component: __WEBPACK_IMPORTED_MODULE_4__blog_component__["a" /* BlogComponent */]
-    }
+    },
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_5__pageNotFound_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -108,11 +111,12 @@ AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_4__blog_component__["a" /* BlogComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__blog_component__["a" /* BlogComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__pageNotFound_component__["a" /* PageNotFoundComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_5_angular2_markdown__["a" /* MarkdownModule */],
+            __WEBPACK_IMPORTED_MODULE_6_angular2_markdown__["a" /* MarkdownModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes)
         ],
         providers: [],
@@ -178,6 +182,34 @@ BlogComponent = __decorate([
 ], BlogComponent);
 
 //# sourceMappingURL=blog.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/pageNotFound.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageNotFoundComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
+    }
+    return PageNotFoundComponent;
+}());
+PageNotFoundComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* Component */])({
+        template: '<h2>Page not found</h2>'
+    })
+], PageNotFoundComponent);
+
+//# sourceMappingURL=pageNotFound.component.js.map
 
 /***/ }),
 

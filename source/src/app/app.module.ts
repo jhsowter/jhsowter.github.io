@@ -4,19 +4,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog.component';
+import { PageNotFoundComponent } from './pageNotFound.component';
 import { MarkdownModule  } from 'angular2-markdown';  
 
 const appRoutes = [
   { 
     path: 'post/:id',      
     component: BlogComponent 
-  }
+  },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlogComponent
+    BlogComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
