@@ -24,7 +24,7 @@ const appRoutes = [
   imports: [
     BrowserModule,
     MarkdownModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   providers: [],
   bootstrap: [AppComponent]
