@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font: 1em/2em "Futura", sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    margin: 1em 3em 1em 3em;
+    padding: 1em;
+    font: inherit;
+}
+
+.footer{
+    text-align: center;
+}
