@@ -149,7 +149,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/blog.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <h1>\r\n    {{title}}\r\n  </h1>\r\n</div>\r\n\r\n<div Markdown>\r\n  `test`\r\n\r\n  <a href=\"/post/1\">click here</a>\r\n  <a href=\"/post/2\">and here</a>\r\n</div>"
+module.exports = "<div>\r\n  <h1>\r\n    {{title}}\r\n  </h1>\r\n</div>\r\n\r\n<div Markdown>\r\n  `test`\r\n\r\n  <a routerLink=\"/post/1\">click here</a>\r\n  <a routerLink=\"/post/2\">and here</a>\r\n</div>"
 
 /***/ }),
 
