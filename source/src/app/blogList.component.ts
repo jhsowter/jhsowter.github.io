@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'blog-list',
@@ -7,9 +8,15 @@ import { Component } from '@angular/core';
 })
 
 export class BlogListComponent {
+  private http: Http;
+  constructor(http: Http){
+    this.http = http;
+    this.http.get("assets/posts").subscribe(ret => {
+      console.log(JSON.stringify(ret));
+    });
+  }
   blogs = [{
-    title: "first",
-    md: "20170606"
+    title: "On Writing",
+    md: "OnWriting"
   }];
-
 }

@@ -9,8 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 export class BlogComponent {
   private route;
   public blog;
+  public title;
   constructor(route: ActivatedRoute){
     this.route = route;
-    this.route.params.subscribe(params => this.blog = "assets/posts/" + params['id']  + ".md");
+    this.route.params.subscribe(params => 
+    {
+      this.title = params["id"];
+      this.blog = "assets/posts/" + this.title  + ".md"
+    });
   }
 }

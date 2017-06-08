@@ -16,3 +16,11 @@ p {
 .footer{
     text-align: center;
 }
+
+.pull-right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
