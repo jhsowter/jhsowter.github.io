@@ -12,6 +12,10 @@ const appRoutes = [
     path: 'post/:id',      
     component: BlogComponent 
   },
+  {
+    path:"",
+    component: AppComponent
+  },
   { path: '**', component: PageNotFoundComponent }
 ];
 
