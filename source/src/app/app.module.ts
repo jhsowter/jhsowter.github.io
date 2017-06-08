@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog.component';
+import { BlogListComponent } from './blogList.component';
 import { PageNotFoundComponent } from './pageNotFound.component';
 import { MarkdownModule  } from 'angular2-markdown';  
 
@@ -11,10 +12,9 @@ const appRoutes = [
   { 
     path: 'post/:id',      
     component: BlogComponent 
-  },
-  {
-    path:"",
-    component: AppComponent
+  },{
+    path: "",
+    component: BlogListComponent
   },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -23,6 +23,7 @@ const appRoutes = [
   declarations: [
     AppComponent,
     BlogComponent,
+    BlogListComponent,
     PageNotFoundComponent
   ],
   imports: [
