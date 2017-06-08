@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { HttpModule }    from '@angular/http';
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog.component';
 import { BlogListComponent } from './blogList.component';
@@ -29,6 +29,7 @@ const appRoutes = [
   imports: [
     BrowserModule,
     MarkdownModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes, {useHash: true})
   ],
   providers: [],

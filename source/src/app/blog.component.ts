@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'blog',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
-  title = 'app';
-  blog = "assets/20170606.md";
-
-
+  private route;
+  public blog;
+  constructor(route: ActivatedRoute){
+    this.route = route;
+    this.route.params.subscribe(params => this.blog = "assets/posts/" + params['id']  + ".md");
+  }
 }
