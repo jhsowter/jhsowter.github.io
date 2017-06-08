@@ -45046,15 +45046,15 @@ function transition$$1(stateChangeExpr, steps) {
 /* unused harmony export ResponseContentType */
 /* unused harmony export ResponseType */
 /* unused harmony export Headers */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Http; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Http; });
 /* unused harmony export Jsonp */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return HttpModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpModule; });
 /* unused harmony export JsonpModule */
 /* unused harmony export Connection */
 /* unused harmony export ConnectionBackend */
 /* unused harmony export XSRFStrategy */
 /* unused harmony export Request */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Response; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Response; });
 /* unused harmony export QueryEncoder */
 /* unused harmony export URLSearchParams */
 /* unused harmony export VERSION */
@@ -52018,7 +52018,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* Version */]
 /* unused harmony export PreloadAllModules */
 /* unused harmony export PreloadingStrategy */
 /* unused harmony export RouterPreloader */
-/* unused harmony export ActivatedRoute */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ActivatedRoute; });
 /* unused harmony export ActivatedRouteSnapshot */
 /* unused harmony export RouterState */
 /* unused harmony export RouterStateSnapshot */
@@ -58279,7 +58279,7 @@ MarkdownComponent.decorators = [
 MarkdownComponent.ctorParameters = function () { return [
     { type: __WEBPACK_IMPORTED_MODULE_2__markdown_service__["a" /* MarkdownService */], },
     { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* ElementRef */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */], },
 ]; };
 MarkdownComponent.propDecorators = {
     'path': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */] },],
@@ -58343,7 +58343,7 @@ var MarkdownModule = (function () {
 
 MarkdownModule.decorators = [
     { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */], args: [{
-                imports: [__WEBPACK_IMPORTED_MODULE_0__angular_common__["i" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* HttpModule */]],
+                imports: [__WEBPACK_IMPORTED_MODULE_0__angular_common__["i" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* HttpModule */]],
                 declarations: [__WEBPACK_IMPORTED_MODULE_3__markdown_component__["a" /* MarkdownComponent */]],
                 providers: [__WEBPACK_IMPORTED_MODULE_4__markdown_service__["a" /* MarkdownService */]],
                 exports: [__WEBPACK_IMPORTED_MODULE_3__markdown_component__["a" /* MarkdownComponent */]],
@@ -58424,7 +58424,7 @@ var MarkdownService = (function () {
     //handle error
     MarkdownService.prototype.handleError = function (error) {
         var errMsg;
-        if (error instanceof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Response */]) {
+        if (error instanceof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Response */]) {
             var body = error.json() || '';
             var err = body.error || JSON.stringify(body);
             errMsg = error.status + " - " + (error.statusText || '') + " " + err;
@@ -58457,7 +58457,7 @@ MarkdownService.decorators = [
 ];
 /** @nocollapse */
 MarkdownService.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */], },
 ]; };
 //# sourceMappingURL=markdown.service.js.map
 
