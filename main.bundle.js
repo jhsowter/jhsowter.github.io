@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\r\n<div class=\"footer\">Footer here</div>"
+module.exports = "<router-outlet></router-outlet>\r\n<div class=\"footer\">Thanks for reading!</div>"
 
 /***/ }),
 
@@ -156,7 +156,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/blog.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <h1>\r\n    {{title}}\r\n  </h1>\r\n</div>\r\n<div class=\"pull-right\"><a routerLink=\"../../\">back to index</a></div><div class=\"clear\"></div>\r\n<div Markdown path=\"{{blog}}\">\r\n</div>"
+module.exports = "<div>\r\n  <h1>\r\n    {{title}}\r\n  </h1>\r\n</div>\r\n<div><a  class=\"pull-right\" routerLink=\"../../\">back to index</a><div class=\"clear\"></div></div>\r\n<div Markdown path=\"{{blog}}\">\r\n</div>"
 
 /***/ }),
 

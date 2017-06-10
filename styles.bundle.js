@@ -8,7 +8,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\nbody {\r\n    font: 1em/2em \"Futura\", sans-serif;\r\n}\r\n\r\nh1{\r\n    text-align: center;\r\n}\r\n\r\np {\r\n    margin: .5em 3em .5em 3em;\r\n    padding: 1em;\r\n    font: inherit;\r\n}\r\n\r\n.footer{\r\n    text-align: center;\r\n}\r\n\r\n.pull-right{\r\n    float: right;\r\n}\r\n\r\n.clear{\r\n    clear: both;\r\n}", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\nbody {\r\n    /*font: 1em/2em \"Futura\", sans-serif;*/\r\n    font: 1em/2em \r\n        -apple-system, \r\n        BlinkMacSystemFont, \r\n        \"Segoe UI\", \r\n        \"Roboto\", \r\n        \"Oxygen\", \r\n        \"Ubuntu\", \r\n        \"Cantarell\", \r\n        \"Fira Sans\", \r\n        \"Droid Sans\", \r\n        \"Helvetica Neue\", \r\n        sans-serif;\r\n    margin: 2em;\r\n    padding: 1em;\r\n}\r\n\r\nh1{\r\n    text-align: center;\r\n}\r\n\r\np {\r\n    padding: inherit;\r\n    margin: 1em;\r\n}\r\n\r\n.footer{\r\n    text-align: center;\r\n}\r\n\r\n.pull-right{\r\n    float: right;\r\n}\r\n\r\n.clear{\r\n    clear: both;\r\n}\r\n\r\n@media(max-width 800px{\r\n\r\n}", ""]);
 
 // exports
 
