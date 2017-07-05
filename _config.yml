@@ -13,8 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Jack Sowter
+name: Jack Sowter
+email: jhsowter@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -25,10 +26,70 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
-theme: minima
+#markdown: kramdown
+#theme: minima
+
+# Google-analytics
+google-analytics:
+  id:               ""
+
+# Disqus
+# disqus:
+#   id:               "kiko-plus"
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Australia/Melbourne
+permalink:          /:year-:month-:day/:title/
+
+page.comments: false
+
+# Pagination
+paginate:           5
+paginate_path:      /page:num/
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  input:            GFM
+
+# Navigation
+nav:
+  - name:           "About"
+    url:            "/about"
+  - name:           "Archive"
+    url:            "/archive"
+  - name:           "Tags"
+    url:            "/tags"
+  - name:           "Github"
+    url:            "https://localhost:4000"
+
+# Sass
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-admin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +102,5 @@ gems:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:            [vendor]
