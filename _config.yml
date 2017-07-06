@@ -66,12 +66,12 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
-  - name:           "Archive"
-    url:            "/archive"
+#  - name:           "Archive"
+#    url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
-  - name:           "Github"
-    url:            "https://localhost:4000"
+#  - name:           "Github"
+#    url:            "https://localhost:4000"
 
 # Sass
 sass:
