@@ -12,7 +12,16 @@
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# in the templates via {{ site.myvariable }}.\
+author:
+  twitter:          jacksowter
+  github:           jhsowter
+  stackoverflow:    1036689/jhsowter
+
+copyright:
+  name:             Jack Sowter
+  year:             2017
+  
 title: Jack Sowter
 name: Jack Sowter
 email: jhsowter@gmail.com
@@ -89,18 +98,19 @@ gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-admin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - build.cmd
+  - serve.cmd
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 exclude:            [vendor]

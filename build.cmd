@@ -1,0 +1,1 @@
+docker run --rm -v %cd%:/srv/jekyll jekyll/jekyll jekyll build
