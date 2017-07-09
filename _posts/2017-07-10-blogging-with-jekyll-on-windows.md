@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Jekyll on Windows with Docker
+tags:
+    jekyll
+    docker
 ---
 
 Blogging with [Jekyll][4] on [Github pages](https://pages.github.com/) is simple and free. You can write your posts in markdown, version and deploy it with [git][3], and you can run a Jeykll server locally to test your changes before you make them live. This is great if you already have and know how to use these tools.
@@ -46,7 +49,7 @@ docker run --rm -v %cd%:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --wa
 
 `--drafts` means that any posts in a _drafts directory will be served as though they were in the _post
 
-And that's it! If you'd like to learn more about the finer points of settings bloggin with Jekyll, I can recommend Tony Ho's article [here][6]. 
+And that's it! If you'd like to learn more about the finer points of blogging with Jekyll, I can recommend Tony Ho's article [here][6]. 
 
 [ss]: {{site.url}}{{site.baseUrl}}/images/docker-shared-drives.PNG "Docker shared Drive"
 
