@@ -50,7 +50,7 @@ google-analytics:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:           Australia/Melbourne
-permalink:          /:year-:month-:day/:title/
+permalink:          /:title/
 
 page.comments: false
 
@@ -99,6 +99,7 @@ gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
