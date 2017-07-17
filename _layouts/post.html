@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <header>
   <div class="header-small">
     <a href="{{site.url}}{{site.baseurl}}">{{ site.name }}</a>
@@ -8,9 +9,14 @@ layout: default
 </header>
 <div class="post">
   <div class="post-title">{{ page.title }}</div>
-  <span class="post-date">
-    <time>{{ page.date | date_to_string }}</time>
-  </span>
+  <div class="post-subtitle">
+    <span class="post-date">
+      <time>{{ page.date | date_to_string }}</time>
+      <div>{% include read_time.html %}</div>
+    </span>
+  </div>
+  {{ content }}
+
   <div class="post-tag">
     <ul>
       {% for tag in page.tags %}
@@ -23,8 +29,6 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-
-  {{ content }}
 
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}

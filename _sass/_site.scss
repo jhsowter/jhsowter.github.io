@@ -117,6 +117,9 @@ body {
     line-height: 1.2em;
     font-weight: 600;
   }
+  &-subtitle{
+    margin-bottom: 1.5rem;
+  }
 
   &-date {
     margin-bottom: .5rem;
@@ -126,7 +129,6 @@ body {
   }
 
    &-tag {
-    margin-bottom: 1.5rem;
 
     ul {
       li:before {
