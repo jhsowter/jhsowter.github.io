@@ -54,7 +54,7 @@ These are plain old DLLs from the .NET framework, or compiled by `dotnet build`,
 ## Blazor.js ties it all together
 Blazor.js contains the code that initialises the mono runtime and loads the assemblies. You can see the typescripted [bootstrapper](https://github.com/aspnet/Blazor/blob/dev/src/Microsoft.AspNetCore.Blazor.Browser.JS/src/Boot.ts)
 
-![DLLs in your browser](/images/blazorjsbootstrap.png){:class="img-responsive"}
+![blazor.js code](/images/blazorjsbootstrap.PNG){:class="img-responsive"}
 
  This code looks at the element in the DOM that lists the assemblies needed for the app to run, and loads them. 
 
