@@ -3,6 +3,7 @@ layout: post
 title: "Browser, Razor, Blazor, Briefly"
 tags:
     .NET
+    .NET-core
     C#
     Blazor
     WebAssembly
