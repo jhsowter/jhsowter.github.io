@@ -19,7 +19,7 @@ Don't use it for anything real just yet. It's considered an alpha, and could eit
 ## It's web components with razor pages
 A component in Blazor looks like this: 
 
-~~~
+~~~ html
 @page "/counter"
 
 <h1>Counter</h1>
@@ -61,7 +61,7 @@ Blazor.js contains the code that initialises the mono runtime and loads the asse
 ## It's got dependency injection
 DI is something I just can't live without in a complex codebase, and something I still desire in simple ones. Blazor components get injected either by using the `@inject` syntax or just by including a parameter in constructor of the component's class. 
 
-~~~
+~~~ html
 @page "/customer-list"
 @using Services
 @inject IDataAccess DataRepository
